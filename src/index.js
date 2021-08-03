@@ -1,5 +1,6 @@
 import { Menu } from "./menu";
-import { Page } from "./page";
+import { Contact } from "./contact";
+import { Landing } from "./landing";
 
 class MainPageHandler{
 
@@ -33,5 +34,9 @@ class MainPageHandler{
 
 let mainPage = new MainPageHandler();
 let menuPage = new Menu();
+let contactPage = new Contact();
+let landingPage = new Landing();
 
 mainPage.AddPage(menuPage);
+mainPage.AddPage(contactPage);
+mainPage.AddPage(landingPage);
