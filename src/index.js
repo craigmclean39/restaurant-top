@@ -2,6 +2,7 @@ import { Menu } from "./menu";
 import { Contact } from "./contact";
 import { Landing } from "./landing";
 import FoodImage from "./foodtruck.jpg";
+import './styles.css';
 
 
 class MainPageHandler{
@@ -11,9 +12,9 @@ class MainPageHandler{
         this.mainContent = document.createElement("div");
         this.mainContent.id = "content";
 
-        const FTImage = new Image();
+        /* const FTImage = new Image();
         FTImage.src = FoodImage;
-        this.mainContent.appendChild(FTImage);
+        this.mainContent.appendChild(FTImage); */
 
         document.getElementsByTagName("body")[0].appendChild(this.mainContent);
     }
