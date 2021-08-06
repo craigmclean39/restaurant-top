@@ -1,4 +1,5 @@
 import { Page } from "./page";
+import PoutineImage from "./poutine-fries-gravy-cheese.jpg";
 
 export class Menu extends Page {
 
@@ -13,5 +14,10 @@ export class Menu extends Page {
         let menuContent = document.createElement("div");
         menuContent.innerText = "Menu";
         return menuContent;
+    }
+
+    GetBackgroundImage()
+    {
+        return PoutineImage;
     }
 }

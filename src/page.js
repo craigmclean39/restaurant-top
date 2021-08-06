@@ -10,4 +10,9 @@ export class Page {
         //console.log("Page - Generate Page");
     }
 
+    GetBackgroundImage()
+    {
+        
+    }
+
 }
