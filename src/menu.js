@@ -1,5 +1,5 @@
 import { Page } from "./page";
-import PoutineImage from "./poutine-fries-gravy-cheese.jpg";
+import PoutineImage from "./images/poutine-fries-gravy-cheese.jpg";
 
 export class Menu extends Page {
 

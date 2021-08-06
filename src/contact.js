@@ -1,5 +1,5 @@
 import { Page } from "./page";
-import PotatoImage from "./overhead-view-of-potatoes.jpg";
+import PotatoImage from "./images/overhead-view-of-potatoes.jpg";
 
 export class Contact extends Page {
 
@@ -16,6 +16,6 @@ export class Contact extends Page {
 
     GetBackgroundImage()
     {
-        return PotatoeImage;
+        return PotatoImage;
     }
 }

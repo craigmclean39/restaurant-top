@@ -2,6 +2,8 @@ html {
     margin: 0px;
     height: 100%;
     width: 100%;
+
+    font-size: 62.5%;
  }
 
 body {
@@ -23,12 +25,15 @@ body {
 .header-item {
     color: white;
     font-family: 'IM Fell French Canon SC';
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 #content {
     height: 90%;
     background-color: black;
     opacity: 90%;
+    color: white;
 }
 
 

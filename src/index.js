@@ -1,7 +1,6 @@
 import { Menu } from "./menu";
 import { Contact } from "./contact";
 import { Landing } from "./landing";
-import FoodImage from "./foodtruck.jpg";
 import './styles.css';
 
 
@@ -37,6 +36,8 @@ class MainPageHandler{
         let item = document.createElement("a");
         item.innerText = name;
         item.classList.add("header-item");
+        item.dataset.headerId = name;
+        item.addEventListener('click', this.#HeaderItemClicked);
         this.headerElements.push(item);
     }
 
@@ -45,6 +46,28 @@ class MainPageHandler{
         for(let i = 0; i < this.headerElements.length; i++)
         {
             this.header.appendChild(this.headerElements[i]);
+        }
+    }
+
+    #HeaderItemClicked(evt)
+    {
+        switch(evt.target.dataset.headerId)
+        {
+            case "Home":
+                {
+                    console.log("Home");
+                    break;
+                }
+            case "Menu":
+                {
+                    console.log("Menu");
+                    break;
+                }
+            case "Contact":
+                {
+                    console.log("Contact");
+                    break;
+                }
         }
     }
 

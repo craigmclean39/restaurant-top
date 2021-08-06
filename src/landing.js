@@ -1,5 +1,5 @@
 import { Page } from "./page";
-import TruckImage from "./foodtruck.jpg";
+import TruckImage from "./images/foodtruck.jpg";
 
 export class Landing extends Page {
 
