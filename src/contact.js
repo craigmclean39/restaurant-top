@@ -6,6 +6,7 @@ export class Contact extends Page {
     constructor() {
 
         super();
+        this.pageTitle = "Contact";
     }
 
     GeneratePage(){

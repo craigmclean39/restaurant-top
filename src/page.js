@@ -3,6 +3,7 @@ export class Page {
     constructor()
     {
         //console.log("Page - Constructor");
+        this.pageTitle = "";
     }
 
     GeneratePage()
@@ -12,7 +13,6 @@ export class Page {
 
     GetBackgroundImage()
     {
-        
-    }
 
+    }
 }

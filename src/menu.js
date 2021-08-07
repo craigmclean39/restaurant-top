@@ -6,11 +6,10 @@ export class Menu extends Page {
     constructor() {
 
         super();
-        //console.log("Menu - Constructor");
+        this.pageTitle = "Menu";
     }
 
-    GeneratePage(){
-        //console.log("Menu - Generate Page");
+    GeneratePage() {
         let menuContent = document.createElement("div");
         menuContent.innerText = "Menu";
         return menuContent;

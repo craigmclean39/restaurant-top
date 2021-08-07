@@ -6,6 +6,7 @@ export class Landing extends Page {
     constructor() {
 
         super();
+        this.pageTitle = "Home";
     }
 
     GeneratePage(){

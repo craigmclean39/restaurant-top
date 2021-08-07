@@ -8,36 +8,37 @@ class MainPageHandler{
 
     constructor() {
 
+        this.headerElements = [];
+        this.pages = [];
+
+        this.currentPageIndex = -1;
+
+
         this.body = document.getElementsByTagName("body")[0];
 
-        //Header
+        //Create the Header Div
         this.header = document.createElement("div");
         this.header.id = "header";
-
-        this.headerElements = [];
-
-        this.#CreateHeaderItem("Home");
-        this.#CreateHeaderItem("Menu");
-        this.#CreateHeaderItem("Contact");
-
-        this.#AddHeaderElements();
-
- 
         this.body.appendChild(this.header);
 
-
+        //Create the div to hold the page content
         this.mainContent = document.createElement("div");
         this.mainContent.id = "content";
         this.body.appendChild(this.mainContent);
+
+        //Bind the eventhandler so that it has access to the methods in the MainPageHandler class
+        this.HeaderItemClicked = this.HeaderItemClicked.bind(this);
     }
 
-    #CreateHeaderItem(name)
+    
+
+    #CreateHeaderItem(name, id)
     {
         let item = document.createElement("a");
         item.innerText = name;
         item.classList.add("header-item");
-        item.dataset.headerId = name;
-        item.addEventListener('click', this.#HeaderItemClicked);
+        item.dataset.headerId = id;
+        item.addEventListener('click', this.HeaderItemClicked);
         this.headerElements.push(item);
     }
 
@@ -49,28 +50,7 @@ class MainPageHandler{
         }
     }
 
-    #HeaderItemClicked(evt)
-    {
-        switch(evt.target.dataset.headerId)
-        {
-            case "Home":
-                {
-                    console.log("Home");
-                    break;
-                }
-            case "Menu":
-                {
-                    console.log("Menu");
-                    break;
-                }
-            case "Contact":
-                {
-                    console.log("Contact");
-                    break;
-                }
-        }
-    }
-
+    
     #ClearMainContent()
     {
         while(this.mainContent.firstChild != undefined)
@@ -84,20 +64,48 @@ class MainPageHandler{
         this.mainContent.appendChild(newContent);
     }
 
+    //This function has to be public so that it can be bound(bind) in the constructor
+    HeaderItemClicked(evt)
+    {
+        this.SwitchPage(evt.target.dataset.headerId);
+    }
+
+    SwitchPage(id)
+    {
+        if(id != this.currentPageIndex)
+        {
+            this.currentPageIndex = id;
+
+            this.#ClearMainContent();
+            this.#FillMainContent(this.pages[id].GeneratePage());
+
+            this.body.style.backgroundImage = `url(${this.pages[id].GetBackgroundImage()})`;  
+        }
+        
+    }
+
     AddPage(newPage)
     {
-        this.#ClearMainContent();
-        this.#FillMainContent(newPage.GeneratePage());
+        let l = this.pages.push(newPage);
+        this.#CreateHeaderItem(newPage.pageTitle, l - 1);
+    }
 
-        this.body.style.backgroundImage = `url(${newPage.GetBackgroundImage()})`;
+    Initialize()
+    {
+        this.#AddHeaderElements();
+        this.SwitchPage(0);
     }
 }
 
-let mainPage = new MainPageHandler();
+
+let pageHandler = new MainPageHandler();
 let menuPage = new Menu();
 let contactPage = new Contact();
 let landingPage = new Landing();
 
-//mainPage.AddPage(menuPage);
-//mainPage.AddPage(contactPage);
-mainPage.AddPage(landingPage);
+
+pageHandler.AddPage(landingPage);
+pageHandler.AddPage(menuPage);
+pageHandler.AddPage(contactPage);
+
+pageHandler.Initialize();
