@@ -822,16 +822,6 @@ module.exports = __webpack_require__.p + "59496da87ce612813602.eot";
 
 /***/ }),
 
-/***/ "./src/fonts/darker-grotesque-v2-latin-600.svg":
-/*!*****************************************************!*\
-  !*** ./src/fonts/darker-grotesque-v2-latin-600.svg ***!
-  \*****************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "02a33dbd78ec9f41e3f5.svg";
-
-/***/ }),
-
 /***/ "./src/fonts/darker-grotesque-v2-latin-600.ttf":
 /*!*****************************************************!*\
   !*** ./src/fonts/darker-grotesque-v2-latin-600.ttf ***!
@@ -869,16 +859,6 @@ module.exports = __webpack_require__.p + "e2715c2d28af73c5d277.woff2";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "474937dd7ac1cf432012.eot";
-
-/***/ }),
-
-/***/ "./src/fonts/darker-grotesque-v2-latin-700.svg":
-/*!*****************************************************!*\
-  !*** ./src/fonts/darker-grotesque-v2-latin-700.svg ***!
-  \*****************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "5aa14f26458f5563d4e0.svg";
 
 /***/ }),
 
@@ -922,16 +902,6 @@ module.exports = __webpack_require__.p + "4ed9c5c86aa0526da74e.eot";
 
 /***/ }),
 
-/***/ "./src/fonts/darker-grotesque-v2-latin-800.svg":
-/*!*****************************************************!*\
-  !*** ./src/fonts/darker-grotesque-v2-latin-800.svg ***!
-  \*****************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "5c3500bbf5c5f6d81699.svg";
-
-/***/ }),
-
 /***/ "./src/fonts/darker-grotesque-v2-latin-800.ttf":
 /*!*****************************************************!*\
   !*** ./src/fonts/darker-grotesque-v2-latin-800.ttf ***!
@@ -969,16 +939,6 @@ module.exports = __webpack_require__.p + "cac3dc7adc79487937a6.woff2";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "1e16cab9f2cfdef03c6d.eot";
-
-/***/ }),
-
-/***/ "./src/fonts/darker-grotesque-v2-latin-regular.svg":
-/*!*********************************************************!*\
-  !*** ./src/fonts/darker-grotesque-v2-latin-regular.svg ***!
-  \*********************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "79a00a1f1fa88dfcd06c.svg";
 
 /***/ }),
 
@@ -1022,16 +982,6 @@ module.exports = __webpack_require__.p + "73b471759d56d4cb27d1.eot";
 
 /***/ }),
 
-/***/ "./src/fonts/im-fell-french-canon-sc-v12-latin-regular.svg":
-/*!*****************************************************************!*\
-  !*** ./src/fonts/im-fell-french-canon-sc-v12-latin-regular.svg ***!
-  \*****************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "2754f211b20f7e2b8699.svg";
-
-/***/ }),
-
 /***/ "./src/fonts/im-fell-french-canon-sc-v12-latin-regular.ttf":
 /*!*****************************************************************!*\
   !*** ./src/fonts/im-fell-french-canon-sc-v12-latin-regular.ttf ***!
@@ -1062,13 +1012,63 @@ module.exports = __webpack_require__.p + "46203c283cd4cb8c75ac.woff2";
 
 /***/ }),
 
+/***/ "./src/fonts/darker-grotesque-v2-latin-600.svg":
+/*!*****************************************************!*\
+  !*** ./src/fonts/darker-grotesque-v2-latin-600.svg ***!
+  \*****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "23461f8f3e9ef228d4d6.svg";
+
+/***/ }),
+
+/***/ "./src/fonts/darker-grotesque-v2-latin-700.svg":
+/*!*****************************************************!*\
+  !*** ./src/fonts/darker-grotesque-v2-latin-700.svg ***!
+  \*****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "fbe4040efc7c91cefc11.svg";
+
+/***/ }),
+
+/***/ "./src/fonts/darker-grotesque-v2-latin-800.svg":
+/*!*****************************************************!*\
+  !*** ./src/fonts/darker-grotesque-v2-latin-800.svg ***!
+  \*****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "ca2e882275795f5f7e9d.svg";
+
+/***/ }),
+
+/***/ "./src/fonts/darker-grotesque-v2-latin-regular.svg":
+/*!*********************************************************!*\
+  !*** ./src/fonts/darker-grotesque-v2-latin-regular.svg ***!
+  \*********************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "f66d713a81cb996be0b4.svg";
+
+/***/ }),
+
+/***/ "./src/fonts/im-fell-french-canon-sc-v12-latin-regular.svg":
+/*!*****************************************************************!*\
+  !*** ./src/fonts/im-fell-french-canon-sc-v12-latin-regular.svg ***!
+  \*****************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "cf2a2178824a3d903630.svg";
+
+/***/ }),
+
 /***/ "./src/images/foodtruck.jpg":
 /*!**********************************!*\
   !*** ./src/images/foodtruck.jpg ***!
   \**********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "50d2b957e94e24a1c6cd.jpg";
+module.exports = __webpack_require__.p + "a84bab3b5cc3b417774c.jpg";
 
 /***/ }),
 
@@ -1078,7 +1078,7 @@ module.exports = __webpack_require__.p + "50d2b957e94e24a1c6cd.jpg";
   \**************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "402d7d3df6e8a92fe89d.jpg";
+module.exports = __webpack_require__.p + "5722bccf2ee08b3d3681.jpg";
 
 /***/ }),
 
@@ -1088,7 +1088,7 @@ module.exports = __webpack_require__.p + "402d7d3df6e8a92fe89d.jpg";
   \***************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "11a855b39a5794eac2e1.jpg";
+module.exports = __webpack_require__.p + "8de274ea0cf2ee8fe666.jpg";
 
 /***/ })
 
