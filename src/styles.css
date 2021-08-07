@@ -2,6 +2,7 @@ html {
     margin: 0px;
     height: 100%;
     width: 100%;
+    min-height: 100%;
 
     font-size: 62.5%;
  }
@@ -9,10 +10,12 @@ html {
 body {
     
     background-size: cover;
+    background-position: center;
     height: 100%;
     width: 100%;
     margin: 0;
-    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #header {
@@ -37,12 +40,95 @@ body {
 }
 
 #content {
-    height: calc(100% - 4rem);
+    min-height: calc(100% - 4rem);
+    height: max-content;
     background-color: black;
     opacity: 90%;
     color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.sub-menu-wrapper {
+
+    background-color: white;
+    width: 300px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.sub-menu {
+    background-color: white;
+    border: black solid 2px;
+    width: calc(270px - 2rem);
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 1rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sub-menu-title {
+
+    font-family: 'IM Fell French Canon SC';
+    font-size: 1.6rem;
+    color: black;
+
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.menu-item {
+
+    margin: 0.5rem;
+    width: calc(100% - .5rem);
+}
+
+.menu-item-title {
+    color:black;
+    font-family: 'IM Fell French Canon SC';
+    font-size: 1.3rem;
+}
+
+.menu-item-one-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-item-desc {
+    color: black;
+    font-family: 'Darker Grotesque';
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+
+}
+
+.menu-price {
+    color: black;
+    font-family: 'Darker Grotesque';
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    padding-left: 0.2rem;
+}
 
 
 /* FONTS */
