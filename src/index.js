@@ -74,12 +74,19 @@ class MainPageHandler{
     {
         if(id != this.currentPageIndex)
         {
+            if(this.currentPageIndex != -1)
+            {
+                this.headerElements[this.currentPageIndex].classList.remove("header-item-current");
+            }
+            
+
             this.currentPageIndex = id;
 
             this.#ClearMainContent();
             this.#FillMainContent(this.pages[id].GeneratePage());
 
-            this.body.style.backgroundImage = `url(${this.pages[id].GetBackgroundImage()})`;  
+            this.body.style.backgroundImage = `url(${this.pages[id].GetBackgroundImage()})`;
+            this.headerElements[id].classList.add("header-item-current");
         }
         
     }

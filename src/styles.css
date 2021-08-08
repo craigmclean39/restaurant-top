@@ -5,6 +5,7 @@ html {
     min-height: 100%;
 
     font-size: 62.5%;
+
  }
 
 body {
@@ -39,16 +40,45 @@ body {
     padding: 1rem;
 }
 
+.header-item-current {
+    color: #b88700;
+}
+
 #content {
     min-height: calc(100% - 4rem);
     height: max-content;
-    background-color: black;
-    opacity: 90%;
+    background-color: rgba(0, 0, 0, 0.9);
     color: white;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.landing-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 4rem);
+    width: 100vw;
+}
+
+.logo {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70vw;
+    height: 70vw;
+
+    max-width: 700px;
+    max-height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-size: 3rem;
+    padding-bottom: 3rem;
 }
 
 .sub-menu-wrapper {
@@ -128,6 +158,77 @@ body {
     font-weight: 700;
     line-height: 1.5rem;
     padding-left: 0.2rem;
+}
+
+.contact-us {
+    width: 100%;
+    max-width: 800px;
+    padding-top: 3rem;
+}
+
+.contact-title {
+    color: white;
+    font-family: 'Darker Grotesque';
+    font-size: 3rem;
+    line-height: 3rem;
+    padding-left: 3rem;
+    padding-bottom: 2rem;
+    margin: 0px;
+}
+
+.contact-subtitle {
+    color: white;
+    font-family: 'IM Fell French Canon SC';
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    padding-left: 3rem;
+    margin: 0px;
+}
+
+.contact-content {
+    color: white;
+    font-family: 'Darker Grotesque';
+    font-size: 2.2rem;
+    padding-left: 3rem;
+    margin: 0px;
+    margin-bottom: 3rem;
+    height: 3rem;
+
+}
+
+@media (min-width: 340px) {
+
+    .logo {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 460px) {
+
+    .logo {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 580px) {
+
+    .logo {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 680px) {
+
+    .logo {
+        font-size: 6rem;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .logo {
+        font-size: 7rem;
+    }
 }
 
 
