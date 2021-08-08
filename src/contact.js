@@ -32,7 +32,7 @@ export class Contact extends Page {
         contactTitle.classList.add("contact-title");
         contactContent.appendChild(contactTitle);
 
-        this.#GenerateContactField(contactContent, "ADDRESS", "123 Cleveland Ave, Squamish, BC, Canada");
+        this.#GenerateContactField(contactContent, "ADDRESS", "123 Cleveland Ave, Squamish, BC");
         this.#GenerateContactField(contactContent, "PHONE NUMBER", "1-604-555-1234");
         this.#GenerateContactField(contactContent, "EMAIL ADDRESS", "poutine.truck@doesnotexist.com");
         
